@@ -1,0 +1,23 @@
+package docs:adder@0.1.0;
+
+interface add {
+    add: func(x: u32, y: u32) -> u32;
+}
+
+world adder {
+    // 2025.10 We do seem to need this "include" 
+    //
+    // It generates internal/wasi/* when we run
+    // go tool wit-bindgen-go generate --world \
+    //    adder --out internal ./docs:adder@0.1.0.wasm
+    //
+    // https://component-model.bytecodealliance.org/language-support/building-a-simple-component/go.html
+    // The line "include wasi:cli/imports@0.2.0" is necessary because
+    // we are using the wasip2 target of TinyGo. TinyGo assumes that
+    // the component targets the wasi:cli/command@0.2.0 world (part of
+    // wasi:cli), so it requires the imports of wasi:cli/imports@0.2.0 .
+    // 
+    // include wasi:cli/imports@0.2.0;
+
+    export add;
+}

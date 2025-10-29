@@ -1,0 +1,3 @@
+echo Ignore WARN mssages...
+wkg wit build
+# expect: WIT package written to docs:adder@0.1.0.wasm
