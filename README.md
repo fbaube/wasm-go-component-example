@@ -1,10 +1,13 @@
-# wasm-component-example
+# wasm-go-component-example
 
-A minimal working version of the Bytecode Alliance's 
+This repo contains a  minimal working version of the Bytecode Alliance's 
 [Go language <tt>adder</tt> example](https://component-model.bytecodealliance.org/language-support/building-a-simple-component/go.html).
 
+This was done to clarify and simplfiy the original,
+which is in a rat's nest of unrelated files and crosslinks.
+
 The license in this repo (Apache 2.0) is the same
-as the Bytecode Alliance repo (above) and the
+as in the Bytecode Alliance repo (above) and the
 [<tt>go-modules</tt> repo](https://github.com/bytecodealliance/go-modules).
 
 Before proceeding, be sure you have the correct <i>(<b>old</b>)</i>
