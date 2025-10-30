@@ -1,4 +1,4 @@
-rm adder.wasm docs\:adder\@0.1.0.wasm wkg.lock go.mod go.sum
+rm adder.wasm docs\:adder\@0.1.0.wasm wkg.lock go.mod go.sum example-host/Cargo.lock
 rm -fr internal/
 rm -fr example-host/target/release/*
 cp go.mod-MIN go.mod
