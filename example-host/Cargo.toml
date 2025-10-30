@@ -3,12 +3,12 @@ name = "example-host"
 version = "0.1.0"
 edition = "2021"
 description = """
-Example Rust-based WebAssembly host that executes WebAssembly components
+Example Rust-based WebAssembly host that executes wasm "adder" component
 """
 
 [dependencies]
 anyhow = "1.0.72"
 async-std = { version = "1.13", features = ["attributes"] }
 clap = { version = "4", features = ["derive"] }
-wasmtime = "34.0"
+wasmtime = "34.0"    # Keep these at 34, cos 38 fails to compile 
 wasmtime-wasi = "34.0"
